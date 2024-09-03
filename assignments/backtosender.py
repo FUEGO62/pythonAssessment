@@ -1,21 +1,18 @@
-def WageCalculator(int):
+class BackToSender:
+    
 
-	wage=0
+    def wage_calculator(parcel_size):
+        wage = 0
+        if parcel_size < 50:
+            wage = (parcel_size * 160) + 5000
+        elif 50 <= parcel_size <= 59:
+            wage = (parcel_size * 200) + 5000
+        elif parcel_size >= 70:
+            wage = (parcel_size * 500) + 5000
+        elif 60 <= parcel_size <= 69:
+            wage = (parcel_size * 250) + 5000
+        return wage
 
-	if parcelSize<50:
-
-		wage = (parcelSize*160)+5000
-
-	if parcelSize>=50 & parcelSize<=59 :
- 
-		wage = (parcelSize*200)+5000
-
-	if parcelSize>=70:
-
-		wage = (parcelSize*500)+5000
-
-	if parcelSize>=60 & parcelSize<=69:
-
-		wage = (parcelSize*250)+5000
-
-	return wage
+number = int(input("How many parcels did you deliver? "))
+wage = BackToSender.wage_calculator(number)
+print(wage)
