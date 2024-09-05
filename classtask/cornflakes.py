@@ -16,6 +16,11 @@ def number_processing(number):
 		return number
 
 	if number>10 and number < 1000:
+		if number>99:
+			first_digit = number//100
+
+		if number<99:
+			first_digit = number//10
 
 		while number!=0:
 
@@ -29,7 +34,7 @@ def number_processing(number):
 
 			temp += remainder
 
-			difference = remainder-temp+1
+			difference = remainder-temp+first_digit
 
 			if checker != 0:
 
