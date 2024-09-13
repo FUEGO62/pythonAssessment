@@ -15,6 +15,12 @@ leftover = 0
 
 order = int(input("Place your order...(i.e '3' for 'Big boys') : "))
 print()
+
+if order >4:
+
+	print("choose something on the menu!!!")
+
+
 number = int(input("How many people are eating? : "))
 print()
 

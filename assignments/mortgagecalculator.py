@@ -1,8 +1,8 @@
 #mortgage calculator
 
-principal = int(input("Enter the principal amount: "))
+principal = float(input("Enter the principal amount: "))
 
-annual_rate= int(input("Enter the annual interest rate: "))
+annual_rate= float(input("Enter the annual interest rate: "))
 
 time_in_years= int(input("Enter the duration in years: "))
 
