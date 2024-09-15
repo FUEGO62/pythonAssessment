@@ -4,22 +4,26 @@ withdraw = 0.00
 total_deposit = 0.00
 total_withdraw = 0.00
 
-def homepage(total_deposit=0,total_withdraw=0):
-	choice = int(input("Hello, press \n1. to deposit\n2. to withdraw\n3. to check balance \n"))
 
+def homepage(total_deposit=0, total_withdraw=0):
+	choice = input("Hello, press \n1. to deposit\n2. to withdraw\n3. to check balance \n")
+	
+		
 	match(choice):
-		case 1:
+		case "1":
 			deposit()
-		case 2 :
+		case "2" :
 			withdraw(total_deposit)
-		case 3:
+		case "3":
 			checkbalance(total_deposit,total_withdraw)
+		case _: 
+			print("Not An Option!!!")
 			
 
 
 def deposit():
 
-	total_deposit = 0.00
+	total_deposit = 0
 
 	while True:
 
@@ -60,7 +64,7 @@ def checkbalance(total_deposit=0,total_withdraw=0):
 
 	balance =(total_deposit - total_withdraw)
 
-	print("your balance is #",balance)
+	print("your balance is N{:,.2f}".format(balance))
 
 
 
