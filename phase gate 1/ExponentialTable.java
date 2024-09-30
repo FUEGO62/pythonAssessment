@@ -1,10 +1,7 @@
-import java.util.Scanner;
 public class ExponentialTable{
 
     public static void main(String[] args){
 
-	Scanner input = new Scanner(System.in);
-	
 	int a = 1;
 
 	int b = 2; 
