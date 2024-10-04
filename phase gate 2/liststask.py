@@ -1,4 +1,10 @@
+import random
 list = [1,2,3,4,5,6,7,8,9,0]
+
+for index in range(len(list)):
+
+	list[index] = random.randrange(1,50)
+
 list_length = 0
 sum = 0
 even_sum = 0
