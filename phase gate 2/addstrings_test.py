@@ -30,6 +30,6 @@ class addstrings_test(unittest.TestCase):
 	
 	def test_that_addstrings_function_Raises_error_with_String(self):
 
-		self.assertRaises(ValueError,addstrings.addstrings("4","12v"))
+		self.assertRaises(ValueError,addstrings.addstrings,"4","12v")
 		
 
