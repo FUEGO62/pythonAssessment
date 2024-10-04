@@ -1,6 +1,6 @@
 def divideorsquare(number):
 
-	if type(number) == type("jesse"): raise TypeError	
+	if type(number) in [str]: raise TypeError	
 
 	if number< 0: raise ValueError	
 

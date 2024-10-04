@@ -20,13 +20,13 @@ class divideorsquare_test(unittest.TestCase):
 	
 	def test_that_divideorsquare_function_Raises_error_with_String(self):
 
-		self.assertRaises(TypeError,divideorsquare.divideorsquare("semicolon"))
+		self.assertRaises(TypeError,divideorsquare.divideorsquare, "semicolon")
 		
 
 	
 	def test_that_divideorsquare_function_Raises_error_with_Negatives(self):
 
-		self.assertRaises(ValueError,divideorsquare.divideorsquare(-2))
+		self.assertRaises(ValueError,divideorsquare.divideorsquare,-2)
 
 
 
