@@ -17,14 +17,9 @@ def reverseIntArray(array) :
 	reversedArray = [0]* len(array)
 
 	for  count  in   range(len(array))  :
-
-			reversedArray[( len(array)-1)-count]=array[count] 
-
-		 
+			reversedArray[( len(array)-1)-count]=array[count]
 		
-	return reversedArray 
-
-	 
+	return reversedArray
 
 def  displayArray(array) :
 	
@@ -32,29 +27,18 @@ def  displayArray(array) :
 
 		print (array[count]+" ") 
 
-		 
-		
-	 
 
 def checkArray(array,   number) :
 
-	counter = 0 
-	
+	counter = 0
 	for  count  in   range(len(array))  :
-
 		if array[count] == number:
-
 			counter+=1 
-
-		 
-
 
 	if(counter>0):
 		return True
 	else :
 		return False
-	 
-
 
 def   displayEvenArray(array) :
 	
@@ -63,18 +47,15 @@ def   displayEvenArray(array) :
 		if((count+1)%2==0):
 			print (array[count]+" ")
 	
-def   displayOddArray(    array) :
+def   displayOddArray(array) :
 	
 	for  count  in   range(len(array))  :
-
 		if((count+1)%2!=0):
-
 			print (array[count]+" ")
 
 def   sumArray(array) :
 
-	total = 0 
-	
+	total = 0
 	for  count  in   range(len(array))  :
 
 		total += array[count] 
@@ -172,17 +153,14 @@ def  fuseAlternateArrays( array1,   array2) :
 	counter = 1 
 
 	for count in range(len(sum2)) :
-
-		
-		concatenatedList[counter] = sum2[count] 
-
+		concatenatedList[counter] = sum2[count]
 		counter +=2 
 
 	return concatenatedList 
 
 def putInList(number) :
 
-	name =  String.valueOf(number) 
+	name =  str(number)
 	list = [len(name)] 
 	for count in range(len(list)) :
 		

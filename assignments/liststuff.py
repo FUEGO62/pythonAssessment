@@ -10,7 +10,6 @@ def get_total(list):
 	return total	
 
 scores = []
-
 score = 1
 total = 0
 
