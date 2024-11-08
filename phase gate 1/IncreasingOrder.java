@@ -7,7 +7,7 @@ public class IncreasingOrder{
 
 	int [] numbers = new int [3];
 
-	for(int count = 0; count <3;count++){
+	for(int count = 0; count < 3 ;count++){
 
 		System.out.println("Enter a number");
 
@@ -26,12 +26,10 @@ public class IncreasingOrder{
 				numbers[counter+1] = numbers[counter+1] - numbers[counter];
 		
 			}
-	
+
 		}
-
-		
+	
 	}
-
 
 	for(int count = 0; count < numbers.length; count++){
 

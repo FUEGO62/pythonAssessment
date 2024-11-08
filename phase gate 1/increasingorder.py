@@ -34,4 +34,4 @@ for counter in range(3):
 
 
 
-print(sorted_numbers)
+print(sorted_numbers[0],sorted_numbers[1],sorted_numbers[2])
